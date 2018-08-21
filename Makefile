@@ -1,11 +1,8 @@
 PROGRAM=Texture64
 
-# compile
+# compile and create executable
 all:
 	javac -cp . $(PROGRAM).java
-
-# create executable
-jar:
 	jar cmf $(PROGRAM).mf $(PROGRAM).jar $(PROGRAM).class $(PROGRAM).java
 
 # clean output
