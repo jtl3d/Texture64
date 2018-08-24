@@ -1,2 +1,2 @@
-java -jar Texture64.jar %1
+java -jar "%~dp0Texture64.jar" %1
 pause
