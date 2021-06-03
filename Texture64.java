@@ -198,10 +198,10 @@ public class Texture64 {
             // get channels
             intensity = (getRed(argb8888) >> 4) << 4;
             alpha = getAlpha(argb8888) >> 4;
-
+            
             // update array
             outArray[j + 0] = (byte) intensity;
-            outArray[j + 0] |= alpha;
+            outArray[j + 0] |= (byte) alpha;
             j += 1;
         }
 
@@ -301,7 +301,7 @@ public class Texture64 {
 	
 	            // update array
 	            dataArray[ii] = (byte) intensity;
-	            dataArray[ii] |= alpha;
+	            dataArray[ii] |= (byte) alpha;
 	        }
 	        i--;
 
